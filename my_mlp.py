@@ -99,9 +99,4 @@ or_dataset = [
     { "input" : (0,1) , "output" : 1 },
     { "input" : (1,1) , "output" : 1 }
 ]
-samples = np.zeros(4, dtype=[('input',  float, 2), ('output', float, 1)])
-samples[0] = (0,0), 0
-samples[1] = (1,0), 1
-samples[2] = (0,1), 1
-samples[3] = (1,1), 1
-learn(samples)
+learn(or_dataset)
